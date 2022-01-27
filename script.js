@@ -1,5 +1,4 @@
-// ToDo: Add FAQs Functions
-
+// FAQs
 // Variables
 var more_less = 0;
 var questions = 0;
