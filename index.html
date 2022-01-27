@@ -74,7 +74,9 @@
                 <div class="line"></div>
                 <li><button style="cursor: context-menu">Or</button></li>
                 <div class="line"></div>
-                <li><button>Type a question</button></li>
+                <li>
+                  <button onclick="input_focus()">Type a question</button>
+                </li>
                 <div class="line"></div>
                 <div class="margin"></div>
               </ul>
@@ -90,8 +92,20 @@
           id="input_question"
           autocomplete="off"
         />
-        <button onclick="keyboard()">Send</button>
+        <button onclick="keyboard()" id="send_btn">Send</button>
       </div>
     </div>
+
+    <!-- Script -->
+    <script>
+      // Enter key pressed submit question
+      input = document.getElementById("input_question");
+      input.addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          keyboard();
+        }
+      });
+    </script>
   </body>
 </html>

@@ -7,7 +7,7 @@ var questions = 0;
 
 function main_menu() {
   $(".wrapper").append(
-    '<div class="main box"><div class="text"><div class="main-text">Have any questions 🙋‍♂️</div><ul><div class="line"></div><li><button style="text-align: left" onclick="start_FAQs()">See a list of FAQs</button></li><div class="line"></div><li><button style="cursor: context-menu">Or</button></li><div class="line"></div><li><button>Type a question</button></li><div class="line"></div><div class="margin"></div></ul></div></div><br />'
+    '<div class="main box"><div class="text"><div class="main-text">Have any questions 🙋‍♂️</div><ul><div class="line"></div><li><button style="text-align: left" onclick="start_FAQs()">See a list of FAQs</button></li><div class="line"></div><li><button style="cursor: context-menu">Or</button></li><div class="line"></div><li><button onclick="input_focus()">Type a question</button></li><div class="line"></div><div class="margin"></div></ul></div></div><br />'
   );
 }
 
@@ -53,6 +53,10 @@ function start_FAQs() {
   $(".wrapper").append(
     '<div class="main box"><div class="text"><div class="main-text">Some FAQs</div><ul><div class="line"></div><li><button onclick="what_is_e_waste()">What is E-Waste?</button></li><div class="line"></div><li><button>Question 2</button></li><div class="line"></div><li><button>Question 3</button></li><div class="line"></div><li><button>Question 4</button></li><div class="line"></div><li><button onclick="more()">More questions...</button></li><div class="line"></div><div class="margin">x</div></ul></div></div><br />'
   );
+}
+
+function input_focus() {
+  document.getElementById("input_question").focus();
 }
 
 function keyboard() {
