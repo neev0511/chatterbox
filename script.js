@@ -58,10 +58,29 @@ function start_FAQs() {
 function keyboard() {
   var question = document.getElementById("input_question").value;
   document.getElementById("input_question").value = "";
-  console.log(question);
   user_question(question);
+  qquery = question.toLowerCase();
+  const query = qquery.split(" ");
+  console.log(query);
 
   // Lots of ifs
+  if (
+    query.includes("faq") ||
+    query.includes("faqs") ||
+    query.includes("question") ||
+    query.includes("questions")
+  ) {
+    faqs();
+  } else if (query.includes("thank")) {
+    answer("You are welcome!");
+  } else if (query.includes("menu")) {
+    main_menu();
+  } else {
+    answer(
+      "I am unable to answer this query at the moment. You can contact +919354640239 for this query."
+    );
+    main_menu();
+  }
 }
 
 // Q1
