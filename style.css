@@ -27,8 +27,7 @@ body {
 
 .wrapper-chat {
   margin: auto;
-  margin-top: 5%;
-  margin-bottom: auto;
+  margin-top: 3%;
   width: 350px;
   height: 450px;
   background-color: #efefef;
@@ -36,7 +35,7 @@ body {
 }
 
 .header-chat {
-  height: 18%;
+  height: 13%;
   width: 100%;
   background-color: #007bff;
   border-radius: 10px;
@@ -45,7 +44,7 @@ body {
 .text-chat {
   text-align: center;
   justify-content: center;
-  padding-top: 10%;
+  padding-top: 7%;
   font-size: 24px;
   color: white;
 }
@@ -71,6 +70,38 @@ body {
   background-color: #efefef;
   border-radius: 10px;
   overflow-y: scroll;
+}
+
+.keyboard{
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  height: 15%;
+}
+
+.keyboard input {
+  width: 70%;
+  border: none;
+  background-color: white;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 6%;
+  margin-left: 10px;
+}
+
+.keyboard input::selection {
+  border: none;
+}
+
+.keyboard button {
+  width: 24%;
+  height: 10%;
+  font-size: 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  min-height: 30px;
 }
 
 /* Chats Code */
