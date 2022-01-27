@@ -48,6 +48,19 @@ function user_question(ques) {
 
 // Functions For Questions
 
+function start_FAQs() {
+  user_question("See a list of FAQs");
+  $(".wrapper").append(
+    '<div class="main box"><div class="text"><div class="main-text">Some FAQs</div><ul><div class="line"></div><li><button onclick="what_is_e_waste()">What is E-Waste?</button></li><div class="line"></div><li><button>Question 2</button></li><div class="line"></div><li><button>Question 3</button></li><div class="line"></div><li><button>Question 4</button></li><div class="line"></div><li><button onclick="more()">More questions...</button></li><div class="line"></div><div class="margin">x</div></ul></div></div><br />'
+  );
+}
+
+function keyboard() {
+  var question = document.getElementById("input_question").innerText;
+  console.log(question);
+  user_question(question);
+}
+
 // Q1
 function what_is_e_waste() {
   user_question("What is E-Waste?");
@@ -55,13 +68,6 @@ function what_is_e_waste() {
     "E-waste is the discarded electronic appliances such as mobile phones, computers, and televisions."
   );
   main_menu();
-}
-
-function start_FAQs() {
-  user_question("See a list of FAQs");
-  $(".wrapper").append(
-    '<div class="main box"><div class="text"><div class="main-text">Some FAQs</div><ul><div class="line"></div><li><button onclick="what_is_e_waste()">What is E-Waste?</button></li><div class="line"></div><li><button>Question 2</button></li><div class="line"></div><li><button>Question 3</button></li><div class="line"></div><li><button>Question 4</button></li><div class="line"></div><li><button onclick="more()">More questions...</button></li><div class="line"></div><div class="margin">x</div></ul></div></div><br />'
-  );
 }
 
 // Last Qs

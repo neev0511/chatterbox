@@ -84,9 +84,13 @@
         </div>
       </div>
       <div class="keyboard">
-        <form>
-          <input type="text" placeholder="Type a question...⌨" />
-          <button type="submit" onclick="keyboard()">Send</button>
+        <form autocomplete="off" onsubmit="keyboard()">
+          <input
+            type="text"
+            placeholder="Type a question...⌨"
+            id="input_question"
+          />
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>
