@@ -59,8 +59,9 @@ function keyboard() {
   var question = document.getElementById("input_question").value;
   document.getElementById("input_question").value = "";
   user_question(question);
-  qquery = question.toLowerCase();
-  const query = qquery.split(" ");
+  question_query = question.toLowerCase();
+  question_query = question_query.replace("?", "").replace(".", "");
+  const query = question_query.split(" ");
   console.log(query);
 
   // Lots of ifs
