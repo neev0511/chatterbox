@@ -60,6 +60,8 @@ function keyboard() {
   document.getElementById("input_question").value = "";
   console.log(question);
   user_question(question);
+
+  // Lots of ifs
 }
 
 // Q1
