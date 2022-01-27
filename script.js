@@ -1,10 +1,14 @@
 // Variables
 var more_less = 0;
+var questions = 0;
 
 // Background Functions
 function faqs() {
   if (more_less < 0) {
     more_less = 0;
+  }
+  if (more_less > 1) {
+    more_less = 1;
   }
   // FAQs
   if (more_less === 0) {
@@ -28,7 +32,7 @@ function answer(ans) {
 function user_question(ques) {
   //   User Question
   $(".wrapper").append(
-    '<div class="box-user"><div class="text"><div class="main-text">' +
+    '<div class="box-user"><div class="text"><div class="main-text" id=>' +
       ques +
       "</div></div></div><br />"
   );
