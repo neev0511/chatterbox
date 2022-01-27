@@ -56,7 +56,8 @@ function start_FAQs() {
 }
 
 function keyboard() {
-  var question = document.getElementById("input_question").innerText;
+  var question = document.getElementById("input_question").value;
+  document.getElementById("input_question").value = "";
   console.log(question);
   user_question(question);
 }
