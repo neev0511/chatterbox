@@ -2,7 +2,10 @@
 var more_less = 0;
 
 // Background Functions
-function faqs(more_less) {
+function faqs() {
+  if (more_less < 0) {
+    more_less = 0;
+  }
   // FAQs
   if (more_less === 0) {
     $(".wrapper").append(
@@ -39,17 +42,17 @@ function what_is_e_waste() {
   answer(
     "E-waste is the discarded electronic appliances such as mobile phones, computers, and televisions."
   );
-  faqs(more_less);
+  faqs();
 }
 
 // Last Qs
 function more() {
   user_question("More questions...");
   more_less = more_less + 1;
-  faqs(more_less);
+  faqs();
 }
 function less() {
   user_question("Less questions...");
   more_less = more_less - 1;
-  faqs(more_less);
+  faqs();
 }
