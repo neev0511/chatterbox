@@ -76,7 +76,11 @@ function keyboard() {
     query.includes("questions")
   ) {
     faqs();
-  } else if (query.includes("thank")) {
+  } else if (
+    query.includes("thank") ||
+    query.includes("thanks") ||
+    query.includes("thx")
+  ) {
     answer("You are welcome!");
   } else if (query.includes("menu")) {
     main_menu();
@@ -89,6 +93,10 @@ function keyboard() {
     answer(
       "E-waste is the discarded electronic appliances such as mobile phones, computers, and televisions."
     );
+  } else if (query.includes("hi") || query.includes("hello")) {
+    answer("Hi 👋");
+  } else if (query.includes("what") && query.includes("name")) {
+    answer("I am earth 🌎");
   } else {
     answer(
       "I am unable to answer this query at the moment. You can contact +919354640239 for this query."
