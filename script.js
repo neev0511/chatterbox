@@ -12,23 +12,11 @@ function main_menu() {
 }
 
 function faqs() {
-  if (more_less < 0) {
-    more_less = 0;
-  }
-  if (more_less > 1) {
-    more_less = 1;
-  }
-  // FAQs
-  if (more_less === 0) {
-    $(".wrapper").append(
-      '<div class="main box"><div class="text"><div class="main-text">Some FAQs</div><ul><div class="line"></div><li><button onclick="what_is_e_waste()">What is E-Waste?</button></li><div class="line"></div><li><button>Question 2</button></li><div class="line"></div><li><button>Question 3</button></li><div class="line"></div><li><button>Question 4</button></li><div class="line"></div><li><button onclick="more()">More questions...</button></li><div class="line"></div><div class="margin">x</div></ul></div></div><br />'
-    );
-  } else {
-    $(".wrapper").append(
-      '<div class="main box"><div class="text"><div class="main-text">FAQs</div><ul><div class="line"></div><li><button onclick="what_is_e_waste()">What is E-Waste?</button></li><div class="line"></div><li><button>Question 2</button></li><div class="line"></div><li><button>Question 3</button></li><div class="line"></div><li><button>Question 4</button></li><div class="line"></div><li><button>Question 5</button></li><div class="line"></div><li><button>Question 6</button></li><div class="line"></div><li><button>Question 7</button></li><div class="line"></div><li><button>Question 8</button></li><div class="line"></div><li><button>Question 9</button></li><div class="line"></div><li><button>Question 10</button></li><div class="line"></div><li><button onclick="less()">Less questions...</button></li><div class="line"></div><div class="margin">x</div></ul></div></div><br />'
-    );
-  }
+  $(".wrapper").append(
+    '<div class="main box"><div class="text"><div class="main-text">FAQs</div><ul><div class="line"></div><li><button onclick="what_is_e_waste()">What is E-waste?</button></li><div class="line"></div><li><button onclick="quantity_e_waste()">What is the quantity of E-waste generated in the world?</button></li><div class="line"></div><li><button onclick="health_hazards()">What are the health hazards caused by E-waste?</button></li><div class="line"></div><li><button onclick="hazardous_chemicals()">What are the hazardous chemicals found in E-waste?</button></li><div class="line"></div><li><button onclick="why_dispose()">Why do you need to dispose of your E-waste in a proper manner?</button></li><div class="line"></div><li><button onclick="what_should()">What you should do?</button></li><div class="line"></div><li><button onclick="()"></button></li><div class="line"></div><div class="margin">x</div></ul></div></div><br />'
+  );
 }
+
 function answer(ans) {
   // Answer
   $(".wrapper").append(
@@ -112,16 +100,4 @@ function what_is_e_waste() {
     "E-waste is the discarded electronic appliances such as mobile phones, computers, and televisions."
   );
   main_menu();
-}
-
-// Last Qs
-function more() {
-  user_question("More questions...");
-  more_less = more_less + 1;
-  faqs();
-}
-function less() {
-  user_question("Less questions...");
-  more_less = more_less - 1;
-  faqs();
 }
