@@ -13,7 +13,7 @@ function main_menu() {
 
 function faqs() {
   $(".wrapper").append(
-    '<div class="main box"><div class="text"><div class="main-text">FAQs</div><ul><div class="line"></div><li><button onclick="what_is_e_waste()">What is E-waste?</button></li><div class="line"></div><li><button onclick="quantity_e_waste()">What is the quantity of E-waste generated in the world?</button></li><div class="line"></div><li><button onclick="health_hazards()">What are the health hazards caused by E-waste?</button></li><div class="line"></div><li><button onclick="hazardous_chemicals()">What are the hazardous chemicals found in E-waste?</button></li><div class="line"></div><li><button onclick="why_dispose()">Why do you need to dispose of your E-waste in a proper manner?</button></li><div class="line"></div><li><button onclick="what_should()">What you should do?</button></li><div class="line"></div><li><button onclick="()"></button></li><div class="line"></div><div class="margin">x</div></ul></div></div><br />'
+    '<div class="main box"><div class="text"><div class="main-text">FAQs</div><ul><div class="line"></div><li><button onclick="what_is_e_waste()">What is E-waste?</button></li><div class="line"></div><li><button onclick="quantity_e_waste()">What is the quantity of E-waste generated in the world?</button></li><div class="line"></div><li><button onclick="health_hazards()">What are the health hazards caused by E-waste?</button></li><div class="line"></div><li><button onclick="hazardous_chemicals()">What are the hazardous chemicals found in E-waste?</button></li><div class="line"></div><li><button onclick="why_dispose()">Why do you need to dispose of your E-waste in a proper manner?</button></li><div class="line"></div><li><button onclick="what_should()">What you should do?</button></li><div class="line"></div><div class="margin">x</div></ul></div></div><br />'
   );
 }
 
@@ -38,9 +38,7 @@ function user_question(ques) {
 
 function start_FAQs() {
   user_question("See a list of FAQs");
-  $(".wrapper").append(
-    '<div class="main box"><div class="text"><div class="main-text">Some FAQs</div><ul><div class="line"></div><li><button onclick="what_is_e_waste()">What is E-Waste?</button></li><div class="line"></div><li><button>Question 2</button></li><div class="line"></div><li><button>Question 3</button></li><div class="line"></div><li><button>Question 4</button></li><div class="line"></div><li><button onclick="more()">More questions...</button></li><div class="line"></div><div class="margin">x</div></ul></div></div><br />'
-  );
+  faqs();
 }
 
 function input_focus() {
@@ -93,7 +91,7 @@ function keyboard() {
   }
 }
 
-// Q1
+// Questions
 function what_is_e_waste() {
   user_question("What is E-Waste?");
   answer(
@@ -101,3 +99,39 @@ function what_is_e_waste() {
   );
   main_menu();
 }
+
+function quantity_e_waste() {
+  user_question("What is the quantity of E-waste generated in the world?");
+  answer(
+    "In 2019, the world generated 53.6 million metric tons (Mt), and only 17.4% of this was officially documented as properly collected and recycled. It grew with 1.8 Mt since 2014, but the total e-waste generation increased by 9.2 Mt"
+  );
+  main_menu();
+}
+
+function health_hazards() {
+  user_question("What are the health hazards caused by E-waste?");
+  answer(
+    "E-waste can be hazardous, when it is disposed and treated in environmentally unsound manner. Direct contact of the harmful materials such as lead, cadmium, chromium, brominated flame retardants or polychlorinated biphenyls (PCBs) and exposure to toxic fumes may cause serious health hazards."
+  );
+  main_menu();
+}
+
+function hazardous_chemicals() {
+  user_question("What are the hazardous chemical found in E-waste");
+  answer(
+    "The hazardous constituents in E-waste are heavy metals like lead, cadmium and mercury, polychlorinated-bi-phenyl (PCB), brominated flame retardants (BFRs) and chromium (VI)."
+  );
+  main_menu();
+}
+
+function name() {
+  user_question(
+    "Why do you need to dispose of your E-waste in a prper manner?"
+  );
+  answer(
+    "We should dispose of our e-waste in proper manner so that it reaches to the authorised recycler for recovery of precious metals and protection of the environment and health from toxic substances contained in e-waste. This will help us to create a system for circular economy."
+  );
+  main_menu();
+}
+
+function name(params) {}

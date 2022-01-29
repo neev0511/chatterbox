@@ -148,6 +148,7 @@ body {
   cursor: pointer;
   padding-left: 10%;
   color: #007bff;
+  text-align: left;
 }
 
 .margin {
