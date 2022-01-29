@@ -124,9 +124,9 @@ function hazardous_chemicals() {
   main_menu();
 }
 
-function name() {
+function why_dispose() {
   user_question(
-    "Why do you need to dispose of your E-waste in a prper manner?"
+    "Why do you need to dispose of your E-waste in a proper manner?"
   );
   answer(
     "We should dispose of our e-waste in proper manner so that it reaches to the authorised recycler for recovery of precious metals and protection of the environment and health from toxic substances contained in e-waste. This will help us to create a system for circular economy."
@@ -134,4 +134,10 @@ function name() {
   main_menu();
 }
 
-function name(params) {}
+function what_should() {
+  user_question("What you should do?");
+  answer(
+    "Reduce, reuse, and recycle. Reduce your generation of e-waste through smart procurement and good maintenance. Reuse still-functioning electronic equipment by donating or selling it to someone. Recycle those components that cannot be repaired. Most electronic devices contain a variety of materials, including metals, that can be recycled."
+  );
+  main_menu();
+}
