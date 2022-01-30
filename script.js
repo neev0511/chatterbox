@@ -79,6 +79,32 @@ function keyboard() {
     answer(
       "E-waste is the discarded electronic appliances such as mobile phones, computers, and televisions."
     );
+  } else if (
+    query.includes("hazard") ||
+    query.includes("hazards") ||
+    query.includes("health") ||
+    query.includes("chemicals")
+  ) {
+    answer(
+      "E-waste can be hazardous, when it is disposed and treated in environmentally unsound manner. Direct contact of the harmful materials such as lead, cadmium, chromium, brominated flame retardants or polychlorinated biphenyls (PCBs) and exposure to toxic fumes may cause serious health hazards."
+    );
+    answer(
+      "The hazardous constituents in E-waste are heavy metals like lead, cadmium and mercury, polychlorinated-bi-phenyl (PCB), brominated flame retardants (BFRs) and chromium (VI)."
+    );
+  } else if (
+    query.includes("why") &&
+    (query.includes("dispose") || query.includes("remove"))
+  ) {
+    answer(
+      "We should dispose of our e-waste in proper manner so that it reaches to the authorised recycler for recovery of precious metals and protection of the environment and health from toxic substances contained in e-waste. This will help us to create a system for circular economy."
+    );
+  } else if (
+    (query.includes("how") || query.includes("what")) &&
+    query.includes("do")
+  ) {
+    answer(
+      "Reduce, reuse, and recycle. Reduce your generation of e-waste through smart procurement and good maintenance. Reuse still-functioning electronic equipment by donating or selling it to someone. Recycle those components that cannot be repaired. Most electronic devices contain a variety of materials, including metals, that can be recycled."
+    );
   } else if (query.includes("hi") || query.includes("hello")) {
     answer("Hi 👋");
   } else if (query.includes("what") && query.includes("name")) {
