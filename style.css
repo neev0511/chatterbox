@@ -4,11 +4,11 @@
   /* --color1: white; */
   --color1: white;
   /* --color2: rgb(207, 50, 50); */
-  --color2: rgb(207, 50, 50);
+  --color2: #fab43a;
 }
 
 body {
-  background-image: linear-gradient(rgb(0, 102, 255),rgb(207, 49, 49));
+  background-image: linear-gradient(rgb(4, 69, 168),rgb(74, 179, 4));
   background-attachment: fixed;
 }
 

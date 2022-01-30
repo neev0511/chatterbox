@@ -103,7 +103,7 @@ function keyboard() {
     query.includes("do")
   ) {
     answer(
-      "Reduce, reuse, and recycle. Reduce your generation of e-waste through smart procurement and good maintenance. Reuse still-functioning electronic equipment by donating or selling it to someone. Recycle those components that cannot be repaired. Most electronic devices contain a variety of materials, including metals, that can be recycled."
+      "Reduce, reuse, and recycle. REDUCE your generation of e-waste through smart procurement and good maintenance. REUSE still-functioning electronic equipment by donating or selling it to someone. RECYCLE those components that cannot be repaired. Most electronic devices contain a variety of materials, including metals, that can be recycled."
     );
   } else if (query.includes("hi") || query.includes("hello")) {
     answer("Hi 👋");
@@ -163,7 +163,7 @@ function why_dispose() {
 function what_should() {
   user_question("What you should do?");
   answer(
-    "Reduce, reuse, and recycle. Reduce your generation of e-waste through smart procurement and good maintenance. Reuse still-functioning electronic equipment by donating or selling it to someone. Recycle those components that cannot be repaired. Most electronic devices contain a variety of materials, including metals, that can be recycled."
+    "Reduce, reuse, and recycle. REDUCE your generation of e-waste through smart procurement and good maintenance.<br> REUSE still-functioning electronic equipment by donating or selling it to someone.<br> RECYCLE those components that cannot be repaired. Most electronic devices contain a variety of materials, including metals, that can be recycled."
   );
   main_menu();
 }
