@@ -167,3 +167,24 @@ function what_should() {
   );
   main_menu();
 }
+function donate() {
+  user_question("Donate to charities");
+  answer(
+    "If your computers, refrigerators, microwaves etc. are still in working condition, you can donate them to a non-profit. Old computers, for example, can be donated to government schools or <br>non-profits. You must ensure that the product is in a reusable condition. You can donate your E-waste <a href='https://icharity.in/donate/sun-foundations-covid-crisis-campaign-4-change-sf-3c4c-initiative?gclid=Cj0KCQiA3fiPBhCCARIsAFQ8QzUgXo89TctlILTNCLxz6oYy4Qy25nGropOvMDh2kZe1SFSF6Ooc5Z0aAv1zEALw_wcB'><u>here</u></a>"
+  );
+  main_menu();
+}
+function sell() {
+  user_question("Sell");
+  answer(
+    "If you have some unwanted electronic items, you can also them. You can sell your electronics <a href='https://www.cashify.in/sell-old-mobile-phone?__utmrg=brand2n&utm_source=google&utm_medium=cpc&utm_campaign=search_branded&utm_term=cashify&utm_content=555935220238&gclid=Cj0KCQiA3fiPBhCCARIsAFQ8QzVsp5ij76pDbU9w8_iuVWj4swlIsqFrhDeUFAMA7tdHQMuwPFx7vBkaAl-sEALw_wcB'><u>here</u></a> "
+  );
+  main_menu();
+}
+function scrap() {
+  user_question("Scrap");
+  answer(
+    "If your electronic gadgets are in an unusable state, your best bet is to scrap them, so that metals and other useful items from them can be reused. You can scrap your E-waste <a href='https://kabadeewala.in/'><u>here</u></a>"
+  );
+  main_menu();
+}
