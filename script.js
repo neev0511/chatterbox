@@ -7,7 +7,7 @@ var questions = 0;
 
 function main_menu() {
   $(".wrapper").append(
-    '<div class="main box"><div class="text"><div class="main-text">Have any questions 🙋‍♂️</div><ul><div class="line"></div><li><button style="text-align: left" onclick="start_FAQs()">See a list of FAQs</button></li><div class="line"></div><li><button onclick="input_focus()">Type a question</button></li><div class="line"></div><div class="margin"></div></ul></div></div><br />'
+    '<div class="main box"><div class="text"><div class="main-text">Have any questions 🙋‍♂️</div><ul><div class="line"></div><li><button style="text-align: left" onclick="start_FAQs()">FAQs</button></li><div class="line"></div><li><button onclick="input_focus()">Type a question</button></li><div class="line"></div><div class="margin"></div></ul></div></div><br />'
   );
 }
 
@@ -37,7 +37,7 @@ function user_question(ques) {
 // Functions For Questions
 
 function start_FAQs() {
-  user_question("See a list of FAQs");
+  user_question("FAQs");
   faqs();
 }
 
@@ -110,6 +110,13 @@ function keyboard() {
     answer("Hi 👋");
   } else if (query.includes("what") && query.includes("name")) {
     answer("I am earth 🌎");
+  } else if (
+    query.includes("quantity") ||
+    (query.includes("how") && query.includes("much"))
+  ) {
+    answer(
+      "In 2019, the world generated 53.6 million metric tons (Mt), and only 17.4% of this was officially documented as properly collected and recycled. It grew with 1.8 Mt since 2014, but the total e-waste generation increased by 9.2 Mt"
+    );
   } else {
     answer(
       "I am unable to answer this query at the moment. You can contact +919354640239 for this query."
