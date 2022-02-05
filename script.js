@@ -74,7 +74,8 @@ function keyboard() {
     query.includes("what") &&
     (query.includes("waste") ||
       query.includes("ewaste") ||
-      query.includes("e-waste"))
+      query.includes("e-waste")) &&
+    query.includes("is")
   ) {
     answer(
       "E-waste is the discarded electronic appliances such as mobile phones, computers, and televisions."
