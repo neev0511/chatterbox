@@ -203,4 +203,10 @@ body {
     height: 350px;
     margin-top: 50%;
   }
+  .box-user{
+    width: 150px;
+  }
+  .box {
+    width: 150px;
+  }
 }

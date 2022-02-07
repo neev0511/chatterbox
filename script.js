@@ -48,14 +48,18 @@ function input_focus() {
 function keyboard() {
   var question = document.getElementById("input_question").value;
   document.getElementById("input_question").value = "";
-  user_question(question);
   question_query = question.toLowerCase();
   question_query = question_query.replace("?", "").replace(".", "");
   const query = question_query.split(" ");
   console.log(query);
+  if (query.includes("")) {
+  } else {
+    user_question(question);
+  }
 
   // Lots of ifs
-  if (
+  if (query.includes("")) {
+  } else if (
     query.includes("faq") ||
     query.includes("faqs") ||
     query.includes("question") ||
